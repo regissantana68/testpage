@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body{
+        background-color: white;
+        text-align: center; 
+        font-size: 20px; 
+        color: red          
+        } 
+        div{
+            background: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 50px;
+            border-radius: 15px;
+            font-size: 20px;
+            color:white
+        }
+        input{
+            border: none;
+            padding: 15px;
+        }
+        button{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            color:rgb(202, 221, 223);
+            background-color: rgb(95, 107, 231);
+            font-size: 20px;
+        }
+        button:hover{
+        color:rgb(white);
+        background-color: rgb(15, 29, 123);
+        }
+    </style>
+</head>
+<body> AVISO: Somente pessoas autorizadas
+    <div>
+        <h2>Restrito</h2>
+        <br><br>
+          
+        <form action="login.php" method="post">
+            <input type="usuario" name="usuario" placeholder="Usuário" required>
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <br><br>
+            <button type="submit">Logar</button>
+        </form>
+    </div>
+    </body>
+</html>
